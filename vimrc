@@ -26,6 +26,7 @@ nnoremap <leader>s :mksession<CR>
 set number "Shows line numbers.
 syntax enable "Enables syntax processing.
 set background=dark "Sets the background to dark mode.
+set t_Co=256 "Better color support. NOTE: This isn't ideal.
 colorscheme solarized "The colorscheme.
 "}}}
 "UI Configuration{{{
