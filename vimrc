@@ -5,6 +5,13 @@
 "For C and Python hacking.
 "**********************************
 
+"This loads pathogen from the non-default directory that I have it in.
+"Instead of being installed in .vim/autoload/ I have it installed to
+".vim/bundle/pathogen/ as a submodule so that I can update pathogen 
+"itself via the same mechanism as all other plugins.
+runtime bundle/pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
 "This activates the single modeline @ the end of the file.
 set modeline 
 
