@@ -1,9 +1,11 @@
 # vim
 
-INSTALL:
+Install:
 
     git clone https://github.com/IG-89/vim.git
 
-CREATE SYMLINK FOR .vimrc FILE:
+Create symlink .vimrc file:
 
     ln -s ~/.vim/vimrc ~/.vimrc
+
+Remember to turn on the solarized scheme in the terminal preferences. 

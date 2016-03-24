@@ -25,7 +25,8 @@ nnoremap <leader>s :mksession<CR>
 "Line Numbers, Syntax, Colorsheme{{{
 set number "Shows line numbers.
 syntax enable "Enables syntax processing.
-colorscheme murphy "The colorscheme.
+set background=dark "Sets the background to dark mode.
+colorscheme solarized "The colorscheme.
 "}}}
 "UI Configuration{{{
 set showcmd "Shows last command entered @ bottom right of editor.
