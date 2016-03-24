@@ -34,6 +34,7 @@ set showcmd "Shows last command entered @ bottom right of editor.
 set cursorline "Highlights/underlines the line where the cursor is.
 set showmatch "Highlight matching for [{()}].
 set lazyredraw "Tells vim to redraw the screen only when essential.
+filetype indent on "Loads filetype-specific indent files.
 "}}}
 "Folding{{{
 set foldenable "Enables folding.
@@ -44,7 +45,7 @@ set foldmethod=indent "Folds get generated based on indentation level.
 nnoremap <space> za
 "}}}
 "Spaces & Tabs{{{
-set tabstop=4 "Number of spaces TABs are represented as in read files.
+set tabstop=8 "Number of spaces TABs are represented as in read files.
 set softtabstop=4 "Number of spaces generated when you press TAB.
 set expandtab "This makes TAB generate the four spaces specified above.
 "}}}
@@ -55,6 +56,16 @@ set hlsearch "Highlights found matches.
 "by simply typing <leader><space> instead of manually disabling via
 "nohlsearch.
 nnoremap <leader><space> :nohlsearch<CR>
+"}}}
+"Autogroups{{{
+augroup python
+    "Clears all autocmds for current group.
+    autocmd! 
+    "Maps python script execution to <F9>.
+    autocmd FileType python 
+        \ nnoremap <buffer> <F9> : exec '!python3'
+        \ shellescape(@%, 1)<cr>
+augroup END
 "}}}
 
 "Modeline, enables section folding.
