@@ -27,6 +27,7 @@ set number "Shows line numbers.
 syntax enable "Enables syntax processing.
 set background=dark "Sets the background to dark mode.
 set t_Co=256 "Better color support. NOTE: This isn't ideal.
+let g:solarized_termcolors=256 "Using degraded colorscheme due to lack of solarized support in MATE terminal.
 colorscheme solarized "The colorscheme.
 "}}}
 "UI Configuration{{{
