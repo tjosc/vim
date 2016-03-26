@@ -27,7 +27,8 @@ set number "Shows line numbers.
 syntax enable "Enables syntax processing.
 set background=dark "Sets the background to dark mode.
 set t_Co=256 "Better color support. NOTE: This isn't ideal.
-let g:solarized_termcolors=256 "Using degraded colorscheme due to lack of solarized support in MATE terminal.
+"Degraded colorscheme due to no solarized support in MATE term.
+"let g:solarized_termcolors=256 
 colorscheme solarized "The colorscheme.
 "}}}
 "UI Configuration{{{
@@ -35,7 +36,7 @@ set showcmd "Shows last command entered @ bottom right of editor.
 set cursorline "Highlights/underlines the line where the cursor is.
 set showmatch "Highlight matching for [{()}].
 set lazyredraw "Tells vim to redraw the screen only when essential.
-filetype indent on "Loads filetype-specific indent files.
+filetype plugin indent on "Loads ftplugins and indent scripts.
 "}}}
 "Folding{{{
 set foldenable "Enables folding.
