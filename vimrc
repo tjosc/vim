@@ -17,6 +17,9 @@ execute pathogen#infect()
 "This activates the single modeline @ the end of the file.
 set modeline 
 
+"Airline{{{
+set laststatus=2 "See :h laststatus. Makes all windows have status line.
+"}}}
 "Character Encoding{{{
 set encoding=utf-8 "Important for python3 and web.
 "}}}
