@@ -1,8 +1,7 @@
 # vim
 
 Most of this info is taken directly from:
-http://vimcasts.org/episodes/synchronizing-plugins-with-git-
-submodules-and-pathogen/
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
 Install on a new machine:
 
