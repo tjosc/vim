@@ -17,8 +17,21 @@ execute pathogen#infect()
 "This activates the single modeline @ the end of the file.
 set modeline 
 
+"Syntastic{{{
+"These are the recommended settings from the Syntastic github README.
+"I need to look more closely at these and comment.
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+"}}}
 "Airline{{{
 set laststatus=2 "See :h laststatus. Makes all windows have status line.
+let g:airline#extensions#syntastic#enabled = 1 "Syntastic integration.
 "}}}
 "Character Encoding{{{
 set encoding=utf-8 "Important for python3 and web.
@@ -32,6 +45,7 @@ nnoremap <leader>s :mksession<CR>
 "}}}
 "Line Numbers, Syntax, Colorsheme{{{
 set number "Shows line numbers.
+set relativenumber "Sets line numbers to relative mode.
 syntax enable "Enables syntax processing.
 set background=dark "Sets the background to dark mode.
 colorscheme solarized "The colorscheme.
