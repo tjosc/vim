@@ -3,11 +3,13 @@
 Most of this info is taken directly from:
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
+Don't copy and paste this, since some of it is "example text."
+
 Install on a new machine:
 
     cd ~
     git clone https://github.com/IG-89/vim.git ~/.vim
-    ln -s ~/.vim/vimrc ~/.vimrc <-Symlink
+    ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
     git submodule init
     git submodule update
@@ -27,5 +29,12 @@ Upgrading a plugin bundle:
 Upgrading all bundled plugins:
 
     git submodule foreach git pull origin master
+
+Initializing a new plugin bundle on a machine after an overall
+update of ~/.vim/:
+
+    cd ~/.vim/bundle/new_plugin
+    git submodule init new_plugin
+    git submodule update
 
 Remember to turn on the solarized scheme in the terminal preferences. 
