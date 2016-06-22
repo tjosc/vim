@@ -8,7 +8,7 @@ Don't copy and paste this, since some of it is "example text."
 Install on a new machine:
 
     cd ~
-    git clone https://github.com/IG-89/vim.git ~/.vim
+    git clone https://github.com/tom-corcoran/vim.git ~/.vim
     ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
     git submodule init

@@ -48,7 +48,7 @@ set number "Shows line numbers.
 set relativenumber "Sets line numbers to relative mode.
 syntax enable "Enables syntax processing.
 set background=dark "Sets the background to dark mode.
-colorscheme solarized "The colorscheme.
+colorscheme desert "The colorscheme.
 set t_Co=256 "Better color support. NOTE: This isn't ideal.
 "Degraded colorscheme for when no solarized support is available.
 "let g:solarized_termcolors=256 
