@@ -1,6 +1,6 @@
-# vim
+# README.md for .vimrc
 
-Most of this info is taken directly from:
+See
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
 Don't copy and paste this, since some of it is "example text."
@@ -8,7 +8,7 @@ Don't copy and paste this, since some of it is "example text."
 Install on a new machine:
 
     cd ~
-    git clone https://github.com/tom-corcoran/vim.git ~/.vim
+    git clone https://github.com/tjosc/vim.git ~/.vim
     ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
     git submodule init
@@ -37,4 +37,5 @@ update of ~/.vim/:
     git submodule init new_plugin
     git submodule update
 
-Remember to turn on the solarized scheme in the terminal preferences. 
+Remember to turn on the solarized scheme in the terminal preferences if using
+that colorscheme. 

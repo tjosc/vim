@@ -1,11 +1,13 @@
+"*****************************************************************************
 "Tom Corcoran
-"24 March 2016
-".vimrc 1.0
+"29 Jan. 2017
+".vimrc Version 1.1
 
-"For C and Python hacking.
-"**********************************
+"For C, JavaScript, and Python hacking.
+"*****************************************************************************
 
-"4-17-2016: TO DO: Syntastic, ctrlP, youcompleteme, separate ft files.
+"Jan 2017: TO DO: ctrlP, youcompleteme, separate ft files, new colors, move
+"over to ~/.dotfiles/ along with the rest. 
 
 "This loads pathogen from the non-default directory that I have it in.
 "Instead of being installed in .vim/autoload/ I have it installed to
@@ -47,12 +49,12 @@ nnoremap <leader>s :mksession<CR>
 set number "Shows line numbers.
 set relativenumber "Sets line numbers to relative mode.
 syntax enable "Enables syntax processing.
-set background=dark "Sets the background to dark mode.
+"set background=dark "Sets the background to dark mode.
 colorscheme desert "The colorscheme.
 set t_Co=256 "Better color support. NOTE: This isn't ideal.
 "Degraded colorscheme for when no solarized support is available.
 "let g:solarized_termcolors=256 
-call togglebg#map('<F5>') "Change solarized bg light/dark with <F5>.
+"call togglebg#map('<F5>') "Change solarized bg light/dark with <F5>.
 "}}}
 "UI Configuration{{{
 set showcmd "Shows last command entered @ bottom right of editor.
