@@ -7,7 +7,7 @@
 "*****************************************************************************
 
 "Jan 2017: TO DO: ctrlP, youcompleteme, separate ft files, new colors, move
-"over to ~/.dotfiles/ along with the rest. 
+"over to ~/.dotfiles/ along with the rest, JavaScript features. 
 
 "This loads pathogen from the non-default directory that I have it in.
 "Instead of being installed in .vim/autoload/ I have it installed to
@@ -30,6 +30,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+map <F8> :SyntasticReset <CR>
+map <F7> :SyntasticCheck <CR>
 "}}}
 "Airline{{{
 set laststatus=2 "See :h laststatus. Makes all windows have status line.
@@ -103,12 +105,21 @@ nnoremap <leader><space> :nohlsearch<CR>
 augroup python
     "Clears all autocmds for current group.
     autocmd! 
-    "Maps python script execution to <F9>.
+    "Maps python script execution to <F6>.
     autocmd FileType python 
-        \ nnoremap <buffer> <F9> : exec '!python3'
+        \ nnoremap <buffer> <F6> : exec '!python3'
         \ shellescape(@%, 1)<cr>
 augroup END
-"}}}
+augroup c
+    "Clears all autocmds for current group.
+    autocmd! 
+    "Maps c save, compile, and execution to <F5>.
+    "Saves file with proper name, compiles with warnings, executes.
+    "Note: < removes the file extension (i.e. '.c').
+    autocmd FileType c
+        \ nnoremap <buffer> <F5> :w<CR>:!clear; gcc % -Wall -o %< && ./%< <CR>
+augroup END
+"}}} 
 
 "Modeline, enables section folding.
 " vim:foldmethod=marker:foldlevel=0 
