@@ -119,7 +119,16 @@ augroup c
     autocmd FileType c
         \ nnoremap <buffer> <F5> :w<CR>:!clear; gcc % -Wall -o %< && ./%< <CR>
 augroup END
-"}}} 
+ "}}} 
+"Misc.{{{
+"1st line below sets <F2> to invert the paste option in normal mode and shows
+"the value of that option. The second line allows <F2> to toggle paste on and
+"off in insert mode. Third line displays if 'paste' is on in normal mode. 
+"See: http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+"set showmode
+"}}}
 
 "Modeline, enables section folding.
 " vim:foldmethod=marker:foldlevel=0 
