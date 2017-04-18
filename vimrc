@@ -92,7 +92,7 @@ nnoremap <C-H> <C-W><C-H>
 "Specifies the behavior of new splits.
 set splitbelow
 set splitright 
-"Handling vim tabs: mapping :tabn and :tabp to <F3> and <F4>.
+"Handling vim tabs. ':tabe /path/to/file' adds a new tab.
 nnoremap <F3> :tabp <CR>
 nnoremap <F4> :tabn <CR>
 "}}}
