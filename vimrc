@@ -92,6 +92,9 @@ nnoremap <C-H> <C-W><C-H>
 "Specifies the behavior of new splits.
 set splitbelow
 set splitright 
+"Handling vim tabs: mapping :tabn and :tabp to <F3> and <F4>.
+nnoremap <F3> :tabp <CR>
+nnoremap <F4> :tabn <CR>
 "}}}
 "Search Settings{{{
 set incsearch "Searches incrementally as you enter characters.
