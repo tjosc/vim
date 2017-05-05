@@ -74,6 +74,8 @@ set foldmethod=indent "Folds get generated based on indentation level.
 nnoremap <space> za
 "}}}
 "Spaces & Tabs{{{
+set smarttab
+set autoindent "Taken from S.O. suggestions for 'smart tabbing'.
 set tabstop=4 "Number of spaces TABs are represented as in read files.
 set softtabstop=4 "Number of spaces generated when you press TAB.
 set shiftwidth=4 "Controls the depth of autoindentation - needed?
