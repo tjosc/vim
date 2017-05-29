@@ -64,6 +64,7 @@ set cursorline "Highlights/underlines the line where the cursor is.
 set showmatch "Highlight matching for [{()}].
 set lazyredraw "Tells vim to redraw the screen only when essential.
 filetype plugin indent on "Loads ftplugins and indent scripts.
+set mouse=a "Mouse mode.
 "}}}
  "Folding{{{
 set foldenable "Enables folding.
