@@ -1,18 +1,23 @@
 "*****************************************************************************
 "Tom Corcoran
-"29 Jan. 2017
+"21 October 2017
 ".vimrc Version 1.1
 
-"For C, JavaScript, and Python hacking.
+"For C, Python, and mind hacking.
 "*****************************************************************************
 
-"Jan 2017: TO DO: ctrlP, youcompleteme, separate ft files, new colors, move
-"over to ~/.dotfiles/ along with the rest, JavaScript features. 
+"Oct 2017 - TO DO: 
+"   
+"   1) writing setup - new augroup / function
+"   2) ctrlP 
+"   3) youcompleteme 
+"   4) separate ft files 
+"   5) new colors 
+"   6) move over to ~/.dotfiles/ along with the rest
 
-"This loads pathogen from the non-default directory that I have it in.
-"Instead of being installed in .vim/autoload/ I have it installed to
-".vim/bundle/pathogen/ as a submodule so that I can update pathogen 
-"itself via the same mechanism as all other plugins.
+"Loads pathogen from .vim/bundle/pathogen/ instead of from .vim/autoload/. 
+"Its installed as a submodule, so it can be updated via the same mechanism 
+"as all other plugins.
 runtime bundle/pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
@@ -52,8 +57,8 @@ set number "Shows line numbers.
 set relativenumber "Sets line numbers to relative mode.
 syntax enable "Enables syntax processing.
 "set background=dark "Sets the background to dark mode.
-colorscheme desert "The colorscheme.
-set t_Co=256 "Better color support. NOTE: This isn't ideal.
+colorscheme slate "The colorscheme.
+"set t_Co=256 "Better color support. NOTE: This isn't ideal.
 "Degraded colorscheme for when no solarized support is available.
 "let g:solarized_termcolors=256 
 "call togglebg#map('<F5>') "Change solarized bg light/dark with <F5>.
