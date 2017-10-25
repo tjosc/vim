@@ -57,10 +57,13 @@ set number "Shows line numbers.
 set relativenumber "Sets line numbers to relative mode.
 syntax enable "Enables syntax processing.
 "set background=dark "Sets the background to dark mode.
-colorscheme slate "The colorscheme.
-"set t_Co=256 "Better color support. NOTE: This isn't ideal.
+colorscheme molokai "The colorscheme.
+set t_Co=256 "Better color support. NOTE: This isn't ideal.
 "Degraded colorscheme for when no solarized support is available.
 "let g:solarized_termcolors=256 
+"For Molokai only. Attempts to bring 256 term version close to GUI colors. 
+let g:rehash256=1
+let g:molokai_original=1
 "call togglebg#map('<F5>') "Change solarized bg light/dark with <F5>.
 "}}}
 "UI Configuration{{{

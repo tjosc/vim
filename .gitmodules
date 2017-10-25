@@ -13,3 +13,6 @@
 [submodule "bundle/dracula"]
 	path = bundle/dracula
 	url = https://github.com/dracula/vim.git
+[submodule "bundle/molokai"]
+	path = bundle/molokai
+	url = https://github.com/tomasr/molokai.git
