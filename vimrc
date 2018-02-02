@@ -1,19 +1,19 @@
 "*****************************************************************************
 "Tom Corcoran
-"21 October 2017
+"2 February 2018
 ".vimrc Version 1.1
 
 "For C, Python, and mind hacking.
 "*****************************************************************************
 
-"Oct 2017 - TO DO: 
+"Feb 2018 - TO DO: 
 "   
 "   1) writing setup - new augroup / function
-"   2) ctrlP 
-"   3) youcompleteme 
+"   2) ctrlP, youcompleteme, auto list generator? 
 "   4) separate ft files 
-"   5) new colors 
-"   6) move over to ~/.dotfiles/ along with the rest
+"   5) move over to ~/.dotfiles/ along with the rest
+"   6) look into calling external shell for python execution (for GVim)
+"   7) latex support
 
 "Loads pathogen from .vim/bundle/pathogen/ instead of from .vim/autoload/. 
 "Its installed as a submodule, so it can be updated via the same mechanism 
@@ -77,6 +77,7 @@ set foldenable "Enables folding.
 set foldlevelstart=20 "A conservative fold level, range is 0 to 99.
 set foldnestmax=10 "Sets max # of folds to 10, prevents insanity.
 set foldmethod=indent "Folds get generated based on indentation level.
+nnoremap <space> za
 "}}}
 "Spaces & Tabs{{{
 set smarttab
