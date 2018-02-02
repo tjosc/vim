@@ -56,15 +56,13 @@ nnoremap <leader>s :mksession<CR>
 set number "Shows line numbers.
 set relativenumber "Sets line numbers to relative mode.
 syntax enable "Enables syntax processing.
-"set background=dark "Sets the background to dark mode.
-colorscheme molokai "The colorscheme.
-set t_Co=256 "Better color support. NOTE: This isn't ideal.
-"Degraded colorscheme for when no solarized support is available.
-"let g:solarized_termcolors=256 
+set background=dark "Sets the background to dark mode by default.
+colorscheme gruvbox "The colorscheme.
+"set t_Co=256 "Better color support. NOTE: This isn't ideal.
 "For Molokai only. Attempts to bring 256 term version close to GUI colors. 
-let g:rehash256=1
-let g:molokai_original=1
-"call togglebg#map('<F5>') "Change solarized bg light/dark with <F5>.
+"let g:rehash256=1
+"let g:molokai_original=1
+call togglebg#map('<F5>') "Change background light/dark with <F5>.
 "}}}
 "UI Configuration{{{
 set showcmd "Shows last command entered @ bottom right of editor.
@@ -79,8 +77,6 @@ set foldenable "Enables folding.
 set foldlevelstart=20 "A conservative fold level, range is 0 to 99.
 set foldnestmax=10 "Sets max # of folds to 10, prevents insanity.
 set foldmethod=indent "Folds get generated based on indentation level.
-"This last one remaps the open/close fold command from za to space.
-nnoremap <space> za
 "}}}
 "Spaces & Tabs{{{
 set smarttab
