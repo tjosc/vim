@@ -16,3 +16,9 @@
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = https://github.com/tomasr/molokai.git
+[submodule "bundle/orbital"]
+	path = bundle/orbital
+	url = https://github.com/fcpg/vim-orbital.git
+[submodule "bundle/gruvbox"]
+	path = bundle/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
