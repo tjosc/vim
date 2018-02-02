@@ -62,7 +62,20 @@ colorscheme gruvbox "The colorscheme.
 "For Molokai only. Attempts to bring 256 term version close to GUI colors. 
 "let g:rehash256=1
 "let g:molokai_original=1
-call togglebg#map('<F5>') "Change background light/dark with <F5>.
+"The following function toggles the background light / dark. 
+"See: https://www.ibm.com/developerworks/library/l-vim-script-1/index.html
+"for excellent variable scoping and function info. E.g., 'g:foo' is global.
+let g:bg_mode = "dark"
+function! Toggle_BG()
+    if g:bg_mode == "dark"
+        set background=light
+        let g:bg_mode = "light"
+    else
+        set background=dark
+        let g:bg_mode = "dark"
+    endif
+endfunction
+map <F5> :call Toggle_BG()<CR>
 "}}}
 "UI Configuration{{{
 set showcmd "Shows last command entered @ bottom right of editor.
