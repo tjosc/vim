@@ -1,6 +1,6 @@
 "*****************************************************************************
 "Tom Corcoran
-"2 February 2018
+"25 April 2018
 ".vimrc Version 1.1
 
 "For C, Python, and mind hacking.
@@ -130,9 +130,11 @@ augroup python
     "Clears all autocmds for current group.
     autocmd! 
     "Maps python script execution to <F6>.
+    "See the below link for more details:
+    "https://stackoverflow.com/questions/601039/vim-save-and-run-at-the-same-time
     autocmd FileType python 
-        \ nnoremap <buffer> <F6> : exec '!python3'
-        \ shellescape(@%, 1)<cr>
+        \ nnoremap <buffer> <F6> : exec <ESC>:w<CR>: exec '!python3 %:p'<CR>
+        "\ shellescape(@%, 1)<cr>
 augroup END
 augroup c
     "Clears all autocmds for current group.
