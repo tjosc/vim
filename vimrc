@@ -154,6 +154,7 @@ augroup END
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 "set showmode
+set visualbell "This turns off the bell sound when you hit EOF / EOL.
 "}}}
 
 "Modeline, enables section folding.
